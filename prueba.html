@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sistema de Categorías</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div id="categorias">
+    <button id="btn-array1">Array 1</button>
+    <button id="btn-array2">Array 2</button>
+  </div>
+
+  <div id="lista-carrito"></div>
+  <div id="detalle-carrito"></div>
+
+  <script>
+    let productosArray1 = [
+  {
+    nombre: "Papote (Array 1)",
+    precio: 10,
+    imagen: "ruta/de/la/imagen1.jpg",
+  },
+  {
+    nombre: "Chapapote 2 (Array 1)",
+    precio: 15,
+    imagen: "ruta/de/la/imagen2.jpg",
+  },
+  // Agrega más objetos de productos para el Array 1 según sea necesario
+];
+
+let productosArray2 = [
+  {
+    nombre: "Producto 1 (Array 2)",
+    precio: 20,
+    imagen: "ruta/de/la/imagen3.jpg",
+  },
+  {
+    nombre: "Producto 2 (Array 2)",
+    precio: 25,
+    imagen: "ruta/de/la/imagen4.jpg",
+  },
+  // Agrega más objetos de productos para el Array 2 según sea necesario
+];
+
+let productosMostrados = [];
+
+function mostrarProductos(arrayProductos) {
+  const listaCarrito = document.getElementById('lista-carrito');
+  listaCarrito.innerHTML = '';
+
+  arrayProductos.forEach(producto => {
+    const divProducto = document.createElement('div');
+    divProducto.classList.add('producto');
+
+    const imagen = document.createElement('img');
+    imagen.src = producto.imagen;
+    imagen.alt = producto.nombre;
+    imagen.classList.add('img-producto'); // Agregar la clase CSS
+    divProducto.appendChild(imagen);
+
+    const nombreProducto = document.createElement('span');
+    nombreProducto.textContent = producto.nombre;
+    divProducto.appendChild(nombreProducto);
+
+    const precioProducto = document.createElement('span');
+    precioProducto.textContent = `Precio: $${producto.precio}`;
+    divProducto.appendChild(precioProducto);
+
+    const botonAgregar = document.createElement('button');
+    botonAgregar.textContent = 'Agregar';
+    botonAgregar.addEventListener('click', () => agregarProductoDetalle(producto));
+    divProducto.appendChild(botonAgregar);
+
+    listaCarrito.appendChild(divProducto);
+  });
+}
+
+function agregarProductoDetalle(producto) {
+  const detalleCarrito = document.getElementById('detalle-carrito');
+  detalleCarrito.innerHTML = '';
+
+  const divProducto = document.createElement('div');
+  divProducto.classList.add('detalle-producto');
+
+  const imagenProducto = document.createElement('img');
+  imagenProducto.src = producto.imagen;
+  imagenProducto.alt = producto.nombre;
+  imagenProducto.classList.add('img-producto'); // Agregar la clase CSS
+  divProducto.appendChild(imagenProducto);
+
+  const nombreProducto = document.createElement('span');
+  nombreProducto.textContent = `Producto: ${producto.nombre}`;
+  divProducto.appendChild(nombreProducto);
+
+  const precioProducto = document.createElement('span');
+  precioProducto.textContent = `Precio: $${producto.precio}`;
+  divProducto.appendChild(precioProducto);
+
+  detalleCarrito.appendChild(divProducto);
+}
+
+// Event listeners para los botones de selección de array
+const btnArray1 = document.getElementById('btn-array1');
+const btnArray2 = document.getElementById('btn-array2');
+
+btnArray1.addEventListener('click', () => {
+  productosMostrados = productosArray1;
+  mostrarProductos(productosMostrados);
+});
+
+btnArray2.addEventListener('click', () => {
+  productosMostrados = productosArray2;
+  mostrarProductos(productosMostrados);
+});
+
+// Mostrar los productos del primer array inicialmente
+productosMostrados = productosArray1;
+mostrarProductos(productosMostrados);
+  </script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+body{
+  background-color: rgb(255, 255, 255);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Futura', 'PT Sans', Verdana, sans-serif;
+    color: white;
+    margin: 0;
+  }
+
+  .about{
+    text-align: center;
+    align-items: center;
+    justify-content: end;
+    display: flex;
+    margin: 19px;
+    margin-top: 17px;
+    width: 40%;
+    color: white;
+  }
+  .nav{
+    background-color: rgb(255, 255, 255);
+    position:fixed;
+  display: flex;
+  color: black;
+  border-color: white;
+  margin-left: 10px;
+  height: 100px;
+  width: 100%;
+  }
+   /* Estilo del contenedor del menú */
+    .menu-container {
+      background-color: rgb(255, 255, 255);
+      overflow-x: scroll;
+      white-space: nowrap;
+      height: 120px;
+      width: 100%;
+      
+    }
+    .util{
+      width: 20%;
+      display: flex;
+      margin-top: 10px;
+      align-items: center;
+      
+    }
+    .menu-container.animacion {
+    animation: deslizar-animacion 2s infinite linear;
+  }
+  
+  @keyframes deslizar-animacion {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50px);
+    }
+  }
+   /* Estilo de los elementos del menú */
+   .menu-item {
+     display: inline-block;
+     padding: 20px;
+   }
+   .main{
+    font-size: 15px;
+     border-radius: 50px;
+     width: 100%;
+     height: 100;
+     display: flex;
+   }
+   .left{
+   text-align: center;
+   width: 35%;
+   border-color: white;
+   border-radius: 10px;
+
+
+}
+
+
+   .right{
+    margin-top: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 70%;
+    width: 100%;
+   text-align: center;
+   border-radius: 10px;
+}
+
+   .header-main{
+   align-items: center;
+   justify-content: center;
+
+   display: flex;
+   height: 10%;
+   background-color: none;
+
+   }
+   .product-list{
+   text-align: center;
+   height: 100%;
+   display: flex;
+   }
+   .logo{
+    margin-top:20px;
+    margin-left: 10px;
+    width: 70%;
+   }
+  .util{
+   width: 26%;
+   justify-content: end;
+   gap: 10px;
+   margin-right: 20px;
+   display: flex;
+  }
+  .header-left{
+   width: 50%;
+   justify-content: end;
+  }
+  .header-right{
+   width: 50%;
+   justify-content: flex-start;
+  }
+  .contenedor-lista{
+    width: 100%;
+
+  }
+  .divImagen{
+    height: 90%;
+    border-radius: 8px;
+  }
+
+  .divDescripcion{
+    padding-top: 20px;
+    height: 30%;  
+  }
+  .cuadricula{
+    flex-wrap: wrap;
+    overflow-y: auto;
+    height: 100%;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(
+        150px,
+        1fr
+      )
+      
+      );
+    }
+
+   .card {
+    border-radius: 30px;
+
+  }
+
+   .grid-item {
+     border-radius: 30px;
+     width: 100%;
+     height: 500px;
+     background-color: #1FBCFF;   
+     padding: 50px;
+     text-align: center;
+     font-size: 15px;
+   }
+
+#carrito{
+  margin-left: auto;
+    margin-right: auto;
+    width: 93%;
+  margin-top: 90px;
+    height: 100%;
+    
+}
+#detalle-carrito{
+
+  margin-top: 50px;
+    height: 100%;
+}
+.detalle-producto{
+    height: 70%;
+    align-items: center;
+
+}
+#descripcion-producto{
+    align-items: center;
+    text-align: center;
+}
+   .img-producto{
+    object-fit: auto;
+    width: 260px;
+    height: 280px;
+}
+
+
+
+#lista-carrito {
+  display: flex;
+  flex-wrap: wrap;
+}
+#categorias{
+    flex-wrap: wrap;
+    padding: 15px;
+    gap: 10px;
+    
+}
+
+.producto {
+  margin-bottom: 30px;
+  margin-right: 180px;
+  width: 10px;
+  height: auto;
+}
+
+
+.boton-agregar{
+  margin: 0;
+  width: 30px;
+  height: auto;
+}
+.boton-producto{
+  background-color: white;
+  margin-right:  210px;
+  width: 80px;
+  height: auto;
+}
+.boton-categoria{
+  display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff; /* Color de fondo del botón */
+    color: #000000; /* Color del texto */
+    border-radius: 5px; /* Borde redondeado */
+  padding: 20px;
+}
+button {
+  border: none;
+  background-color: white;
+  color: black;
+  margin-right: 10px;
+
+  }
+  .boton-telefono {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 20px;
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    border-radius: 5px; /* Borde redondeado */
+    text-decoration: none; /* Eliminar subrayado */
+  }
+  
+  .boton-telefono i {
+    margin-right: 5px; /* Espacio entre el ícono y el texto */
+  }
+  
+  
+  
+
+
+
