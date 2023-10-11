@@ -18,8 +18,9 @@ body{
     color: white;
   }
   .nav{
-    background-color: rgb(255, 255, 255);
-    position:fixed;
+  z-index: 1;
+  background-color: rgb(255, 255, 255);
+  position:fixed;
   display: flex;
   color: black;
   border-color: white;
@@ -29,6 +30,7 @@ body{
   }
    /* Estilo del contenedor del menú */
     .menu-container {
+      position: absolute;
       background-color: rgb(255, 255, 255);
       overflow-x: scroll;
       white-space: nowrap;
