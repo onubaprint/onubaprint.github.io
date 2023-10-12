@@ -33,7 +33,7 @@ body{
       overflow-x: scroll;
       overflow-y: hidden;
       white-space: nowrap;
-      height: 100px;
+      height: 130px;
       width: 100%;
       
     }
@@ -204,6 +204,7 @@ body{
     flex-wrap: wrap;
     padding: 15px;
     gap: 10px;
+    heigh: 99%;
     
 }
 
