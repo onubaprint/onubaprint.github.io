@@ -172,6 +172,7 @@ body{
     width: 93%;
   margin-top: 90px;
     height: 100%;
+  overflow-x: hidden;
     
 }
 #detalle-carrito{
