@@ -157,10 +157,6 @@ let productosPorCategoria = {
       imagen: "adhesivosGranFormato.jpg"
     },
     {
-      nombre: "Cinta Adhhesiva Paquetes",
-      imagen: "cintaAdhesivaPaquete.jpg"
-    },
-    {
       nombre: "Pegatinas de etiquetado",
       imagen: "pegatinasEtiquetado.jpg"
     },
@@ -195,12 +191,32 @@ let productosPorCategoria = {
       imagen: "otrosFormatos.jpg"
     },
     {
-      nombre: "Muestrario de Papeles",
-      imagen: "muestrarioDePapeles.jpg"
-    },
-    {
       nombre: "Menus",
       imagen: "menus.jpg"
+    },
+    {
+      nombre: "Encuadernación Premium Grapada",
+      imagen: "encuadernacionPremiumGrapada.jpg"
+    },
+    {
+      nombre: "Encuadernación Grapada",
+      imagen: "encuadernacionGrapada.jpg"
+    },
+    {
+      nombre: "Encuadernación Fresada",
+      imagen: "encuadernacionFresada.jpg"
+    },
+    {
+      nombre: "Encuadernacion con Espiral Mágnetica",
+      imagen: "encuadernacionEspiralMag.jpg"
+    },
+    {
+      nombre: "Encuadernación Cosida",
+      imagen: "encuadernacionCosida.jpg"
+    },
+    {
+      nombre: "Encuadernación Con Anillas de Gran Tirada",
+      imagen: "encuadernacionAnillasGranTiradda.jpg"
     },
     {
       nombre: "Marca Páginas",
@@ -229,30 +245,6 @@ let productosPorCategoria = {
     {
       nombre: "Expositor Porta-Revistas",
       imagen: "expositorPortaRevistas.jpg"
-    },
-    {
-      nombre: "Encuadernación Premium Grapada",
-      imagen: "encuadernacionPremiumGrapada.jpg"
-    },
-    {
-      nombre: "Encuadernación Grapada",
-      imagen: "encuadernacionGrapada.jpg"
-    },
-    {
-      nombre: "Encuadernación Fresada",
-      imagen: "encuadernacionFresada.jpg"
-    },
-    {
-      nombre: "Encuadernacion con Espiral Mágnetica",
-      imagen: "encuadernacionEspiralMag.jpg"
-    },
-    {
-      nombre: "Encuadernación Cosida",
-      imagen: "encuadernacionCosida.jpg"
-    },
-    {
-      nombre: "Encuadernación Con Anillas de Gran Tirada",
-      imagen: "encuadernacionAnillasGranTiradda.jpg"
     },
     {
       nombre: "Catálogos",
